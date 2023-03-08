@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WD08 Assignment Mandatory</title>
+  </head>
+
+  <body style="text-align: center">
+    <div>
+      <h2>Task 1 - Check if a string is upper case</h2>
+      <p name="task1">The quick brown fox jumps over the lazy dog</p>
+      <p name="task1">THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG</p>
+      <button onclick="task1(0)">Check first string!</button>
+      <button onclick="task1(1)">Check second string!</button>
+      <p id="result"></p>
+    </div>
+    <br />
+    <hr />
+    <div>
+      <h2>
+        Task 2 - Remove the spaces from the string, then log the resultant
+        string.
+      </h2>
+      <label for="myString">Your text: </label>
+      <input
+        type="text"
+        id="myString"
+        placeholder="The quick brown fox jumps over the lazy dog"
+        style="width: 300px"
+      />
+      <button onclick="task2()">remove spaces!</button>
+      <p>
+        Here is you text without the spaces:
+        <span id="resultTask2" style="color: blue; font-weight: bold"></span>
+      </p>
+    </div>
+    <br />
+    <hr />
+    <div>
+      <h2>Task 3 - Calculate the sum of 2 numbers and log the result.</h2>
+      <div style="display: flex; justify-content: center; margin: 0">
+        <div style="padding: 1rem">
+          <label for="firstNumber">Type a number: </label>
+          <input type="number" id="firstNumber" style="width: 40px" />
+        </div>
+        <div style="padding: 1rem">
+          <label for="secondNumber">Type another number: </label>
+          <input
+            type="number"
+            name="secondNumber"
+            id="secondNumber"
+            style="width: 40px"
+          />
+        </div>
+        <div style="padding: 1rem">
+          <button onclick="task3()">calculate sum</button>
+        </div>
+      </div>
+      <p>
+        The sum of your chosen numbers is:
+        <span id="resultTask3" style="color: blue; font-weight: bold"></span>
+      </p>
+    </div>
+    <br />
+    <hr />
+    <div>
+      <h2>Task 4 - Return the square root of a number n.</h2>
+      <label for="square">Type a number: </label>
+      <input type="number" name="square" id="square" style="width: 40px" />
+      <button onclick="task4()">calculate!</button>
+      <p>
+        The square root of your number is:
+        <span id="resultTask4" style="color: blue; font-weight: bold"></span>
+      </p>
+    </div>
+    <br />
+    <hr />
+    <div>
+      <h2>Task 5 - Log to the console your current age.</h2>
+      <label for="birthYear">Type in your year of birth: </label>
+      <input
+        type="number"
+        name="birthYear"
+        id="birthYear"
+        placeholder="YYYY"
+        min="1901"
+        max="2023"
+        style="width: 50px"
+      />
+      <button onclick="task5()">calculate!</button>
+      <p id="resultTask5"></p>
+    </div>
+    <br />
+    <hr />
+    <div>
+      <h2>
+        Task 6 - Given 2 variables, return the value of the second variable,
+        multiplied as many times as the value of the first.
+      </h2>
+      <div style="display: flex; justify-content: center; margin: 0">
+        <div style="padding: 1rem">
+          <label for="count">Multiplier: </label>
+          <input
+            type="number"
+            name="count"
+            id="count"
+            value="1"
+            min="1"
+            style="width: 30px"
+          />
+        </div>
+        <div style="padding: 1rem">
+          <label for="stringT6">Type a string: </label>
+          <input
+            type="text"
+            name="stringT6"
+            id="stringT6"
+            placeholder="Type your string here"
+            value="Hello"
+          />
+        </div>
+        <div style="padding: 1rem">
+          <button onclick="task6()">Multiply!</button>
+        </div>
+      </div>
+      <p id="resultTask6"></p>
+    </div>
+    <br />
+    <hr />
+    <div>
+      <h2>
+        Task 7 - Convert a binary number (given as a string) to a decimal
+        number.
+      </h2>
+      <label for="binaryNumber">Type a binary number: </label>
+      <input
+        type="text"
+        id="binaryNumber"
+        name="binaryNumber"
+        oninput="this.value = this.value.replace(/[^0-1.]/g, '')"
+      />
+      <!-- Am gasit varianta asta cu oninput ca sa restrictionez input-ul sa primeasca doar cifrele 0 si 1. Practic folosesc acelasi .replace de la task-ul 2 si sterg orice caracter care nu indeplineste conditiile impuse de mine. -->
+      <button onclick="task7()">Convert!</button>
+      <p>
+        Your binary number converted into decimal number is:
+        <span id="resultTask7" style="color: blue; font-weight: bold"></span>
+      </p>
+    </div>
+    <br />
+    <hr />
+    <div>
+      <h2>Task 8 - Return the final number, at the given power.</h2>
+      <div style="display: flex; justify-content: center; margin: 0">
+        <div style="padding: 1rem">
+          <label for="numberT8">Type a number: </label>
+          <input
+            type="number"
+            name="numberT8"
+            id="numberT8"
+            style="width: 40px"
+          />
+        </div>
+        <div style="padding: 1rem">
+          <label for="powerT8">Type a number: </label>
+          <input
+            type="number"
+            name="powerT8"
+            id="powerT8"
+            style="width: 40px"
+          />
+        </div>
+        <div style="padding: 1rem">
+          <button onclick="task8()">calculate power</button>
+        </div>
+      </div>
+      <p>
+        Your number at the given power is:
+        <span id="resultTask8" style="color: blue; font-weight: bold"></span>
+      </p>
+    </div>
+    <br />
+    <hr />
+    <div>
+      <h2>Task 9 - Reverse a string</h2>
+      <label for="myStringT9">Your text: </label>
+      <input
+        type="text"
+        id="myStringT9"
+        placeholder="The quick brown fox jumps over the lazy dog"
+        style="width: 300px"
+      />
+      <button onclick="task9()">reverse!</button>
+      <p>
+        Here is you text reversed:
+        <span id="resultTask9" style="color: blue; font-weight: bold"></span>
+      </p>
+    </div>
+    <br />
+    <hr />
+    <div>
+      <h2>Task 10 - Remove a certain letter from a string.</h2>
+      <label for="myStringT10">Your text: </label>
+      <input
+        type="text"
+        id="myStringT10"
+        value="The quick brown fox jumps over the lazy dog"
+        style="width: 300px"
+      />
+      <label for="myLetterT10">Pick a letter: </label>
+      <input type="text" id="myLetterT10" maxlength="1" style="width: 15px" />
+      <button onclick="task10()">remove letter!</button>
+      <p>
+        Here is you text without the selected letter:
+        <span id="resultTask10" style="color: blue; font-weight: bold"></span>
+      </p>
+    </div>
+    <br />
+    <hr />
+
+    <script src="script.js"></script>
+  </body>
+</html>
